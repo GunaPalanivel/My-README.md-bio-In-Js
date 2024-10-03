@@ -6,7 +6,7 @@ Here's a JavaScript code snippet that dynamically generates a GitHub README.md c
 
 I'm a 21-year-old developer based in ${country} 🇮🇳, and I'm passionate about ${passion}.
 
-- 🌟 As an [ALPHA member of Microsoft MLSA](https://mvp.microsoft.com/en-US/studentambassadors/profile/e9949081-2982-483b-97a7-c0a8baf88937), driving forward tech innovation.
+- 🌟 As a [Beta member of Microsoft MLSA](https://mvp.microsoft.com/en-US/studentambassadors/profile/e9949081-2982-483b-97a7-c0a8baf88937), driving forward tech innovation.
 - 🌐 Check out my [website](${websiteURL}) to learn more about me.
 - 🔗 Explore my [Links](${linksURL}) to find me on various platforms.
 - 📃 View the PDF version of my resume on the drive and navigate through the links [here](${resumeURL}).
