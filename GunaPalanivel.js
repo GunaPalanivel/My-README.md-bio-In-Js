@@ -4,18 +4,21 @@ const developerInfo = {
   passion: "creating awesome software",
   websiteURL: "https://gunaprofile.pages.dev/",
   linksURL: "https://gunalinks.pages.dev/",
-  resumeURL: "https://drive.google.com/file/d/1G6tzooQNEd803ec0d_CN_LTFe0GqX6kb/view?usp=sharing",
+  resumeURL: "https://drive.google.com/file/d/1ewoA3QtrAObZWfSi_zE_OfVM8mkuoC4S/view?usp=sharing",
   githubURL: "https://github.com/GunaPalanivel",
   linkedinURL: "https://www.linkedin.com/in/guna-palanivel/",
   vsCodeConfigURL: "https://github.com/GunaPalanivel/vs-code-settings",
   toolbox: {
-    frontend: ["HTML5", "CSS3", "JavaScript"],
-    languages: ["JavaScript"],
-    jsLibrary: ["ReactJS"],
-    backend: ["Node.js"],
+    frontend: ["HTML5", "CSS3", "JavaScript (ES6+)"],
+    languages: ["JavaScript", "Python", "TypeScript"],
+    jsLibrary: ["React", "Next.js", "AdminJS", "Bootstrap"],
+    backend: ["Node.js", "Sequelize"],
     versionControl: ["Git", "GitHub"],
-    databases: ["MySQL", "MongoDB"],
-    software: ["Visual Studio Code", "MySQL Workbench", "MongoDB Compass", "Git Bash", "GitHub Desktop"]
+    databases: ["MySQL", "MongoDB", "PostgreSQL", "Redis"],
+    software: ["Visual Studio Code", "MySQL Workbench", "MongoDB Compass", "Git Bash", "GitHub Desktop"],
+    os: ["Windows Subsystem for Linux (Ubuntu)", "Linux/Unix"],
+    csFundamentals: ["Data Structures and Algorithms", "Object-Oriented Programming"],
+    tools: ["Docker", "CI/CD Pipelines", "REST APIs", "Agile/Scrum"]
   },
   funFacts: {
     favoriteMovie: "The Pursuit of Happyness",
@@ -36,7 +39,7 @@ function generateReadme(userInfo) {
 
 I'm a 21-year-old developer based in ${country} 🇮🇳, and I'm passionate about ${passion}.
 
-- 🌟 As an [ALPHA member of Microsoft MLSA](https://mvp.microsoft.com/en-US/studentambassadors/profile/e9949081-2982-483b-97a7-c0a8baf88937), driving forward tech innovation.
+- 🌟 As a [Beta member of Microsoft MLSA](https://mvp.microsoft.com/en-US/studentambassadors/profile/e9949081-2982-483b-97a7-c0a8baf88937), driving forward tech innovation.
 - 🌐 Check out my [website](${websiteURL}) to learn more about me.
 - 🔗 Explore my [Links](${linksURL}) to find me on various platforms.
 - 📃 View the PDF version of my resume on the drive and navigate through the links [here](${resumeURL}).
@@ -49,7 +52,7 @@ I'm a 21-year-old developer based in ${country} 🇮🇳, and I'm passionate abo
 
 **Programming Languages:** \`${toolbox.languages.join("` `")}\`
 
-**JavaScript Library:** \`${toolbox.jsLibrary.join("` `")}\`
+**JavaScript Library & Frameworks:** \`${toolbox.jsLibrary.join("` `")}\`
 
 **Backend Development:** \`${toolbox.backend.join("` `")}\`
 
@@ -58,6 +61,12 @@ I'm a 21-year-old developer based in ${country} 🇮🇳, and I'm passionate abo
 **Databases:** \`${toolbox.databases.join("` `")}\`
 
 **Software:** \`${toolbox.software.join("` `")}\`
+
+**Operating Systems:** \`${toolbox.os.join("` `")}\`
+
+**Computer Science Fundamentals:** \`${toolbox.csFundamentals.join("` `")}\`
+
+**Tools and Platforms:** \`${toolbox.tools.join("` `")}\`
 
 ## ✨ Fun Facts
 
