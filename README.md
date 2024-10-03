@@ -19,7 +19,7 @@ I'm a 21-year-old developer based in ${country} 🇮🇳, and I'm passionate abo
 
 **Programming Languages:** \`${toolbox.languages.join("` `")}\`
 
-**JavaScript Library:** \`${toolbox.jsLibrary.join("` `")}\`
+**JavaScript Library & Frameworks:** \`${toolbox.jsLibrary.join("` `")}\`
 
 **Backend Development:** \`${toolbox.backend.join("` `")}\`
 
@@ -28,6 +28,12 @@ I'm a 21-year-old developer based in ${country} 🇮🇳, and I'm passionate abo
 **Databases:** \`${toolbox.databases.join("` `")}\`
 
 **Software:** \`${toolbox.software.join("` `")}\`
+
+**Operating Systems:** \`${toolbox.os.join("` `")}\`
+
+**Computer Science Fundamentals:** \`${toolbox.csFundamentals.join("` `")}\`
+
+**Tools and Platforms:** \`${toolbox.tools.join("` `")}\`
 
 ## ✨ Fun Facts
 
