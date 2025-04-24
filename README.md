@@ -2,26 +2,44 @@ Here's a JavaScript code snippet that dynamically generates a GitHub README.md c
 
 ```javascript
 //Visit GunaPalanivel.js
+function generateReadme(userInfo) {
+  const {
+    name,
+    country,
+    passion,
+    websiteURL,
+    linksURL,
+    resumeURL,
+    githubURL,
+    linkedinURL,
+    vsCodeConfigURL,
+    toolbox,
+    funFacts,
+    contact,
+  } = userInfo;
+
+  return `
 # Hi there 👋, I'm ${name}! 🌟
 
-I'm a 21-year-old developer based in ${country} 🇮🇳, and I'm passionate about ${passion}.
+I'm a 22-year-old Software Developer based in ${country} 🇮🇳, passionate about ${passion}.
 
-- 🌟 As a [Beta member of Microsoft MLSA](https://mvp.microsoft.com/en-US/studentambassadors/profile/e9949081-2982-483b-97a7-c0a8baf88937), driving forward tech innovation.
-- 🌐 Check out my [website](${websiteURL}) to learn more about me.
-- 🔗 Explore my [Links](${linksURL}) to find me on various platforms.
-- 📃 View the PDF version of my resume on the drive and navigate through the links [here](${resumeURL}).
-- 📚 Stay updated with my journey on [GitHub](${githubURL}) and [LinkedIn](${linkedinURL}).
-- ⚙️ Explore my [VS Code Configuration](${vsCodeConfigURL}) for development optimization.
+- 🌟 As a [Beta member of Microsoft MLSA](https://mvp.microsoft.com/en-US/studentambassadors/profile/e9949081-2982-483b-97a7-c0a8baf88937), I love driving innovation and contributing to community knowledge.
+- 💻 Here's a [JavaScript code](https://github.com/GunaPalanivel/My-README.md-bio-In-Js) snippet that dynamically generates this README.
+- 🌐 Check out my [website](${websiteURL}) to know more about what I'm up to.
+- 🔗 Explore my [Links](${linksURL}) to connect with me across platforms.
+- 📃 View my resume [here](${resumeURL}) — it’s got clickable links too.
+- 📚 Stay in the loop via [GitHub](${githubURL}) and [LinkedIn](${linkedinURL}).
+- ⚙️ My [VS Code setup](${vsCodeConfigURL}) helps me stay productive.
 
 ## 📦 Toolbox
 
-**Frontend Development:** \`${toolbox.frontend.join("` `")}\`
+**Frontend:** \`${toolbox.frontend.join("` `")}\`
 
-**Programming Languages:** \`${toolbox.languages.join("` `")}\`
+**Languages:** \`${toolbox.languages.join("` `")}\`
 
-**JavaScript Library & Frameworks:** \`${toolbox.jsLibrary.join("` `")}\`
+**JS Frameworks:** \`${toolbox.jsLibrary.join("` `")}\`
 
-**Backend Development:** \`${toolbox.backend.join("` `")}\`
+**Backend:** \`${toolbox.backend.join("` `")}\`
 
 **Version Control:** \`${toolbox.versionControl.join("` `")}\`
 
@@ -29,21 +47,25 @@ I'm a 21-year-old developer based in ${country} 🇮🇳, and I'm passionate abo
 
 **Software:** \`${toolbox.software.join("` `")}\`
 
-**Operating Systems:** \`${toolbox.os.join("` `")}\`
+**OS:** \`${toolbox.os.join("` `")}\`
 
-**Computer Science Fundamentals:** \`${toolbox.csFundamentals.join("` `")}\`
+**CS Fundamentals:** \`${toolbox.csFundamentals.join("` `")}\`
 
-**Tools and Platforms:** \`${toolbox.tools.join("` `")}\`
+**Dev Tools:** \`${toolbox.tools.join("` `")}\`
 
 ## ✨ Fun Facts
 
-- 🎬 "${funFacts.favoriteMovie}" is my favorite movie.
+- 🎬 Favorite movie? "${funFacts.favoriteMovie}"
 - 🍿 I prefer ${funFacts.moviePreference}.
-- 🧠 I enjoy gaining knowledge from various sources, be it ${funFacts.knowledgeSources.join(", ")}.
+- 🧠 I learn from ${funFacts.knowledgeSources.join(
+    ", "
+  )} — always hungry for knowledge.
 
 ## 📫 Contact
 
-For a quick response, DM me on [Instagram](${contact.instagram}) or [LinkedIn](${contact.linkedin}).
+Quickest way? DM me on [Instagram](${contact.instagram}) or [LinkedIn](${
+    contact.linkedin
+  }).
 
 <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60"> <em><b>Let's connect and chat!</b></em>
 `;
